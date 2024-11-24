@@ -1,4 +1,3 @@
-import { response } from "express";
 import React, { useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { BiQrScan } from "react-icons/bi";
@@ -6,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
   const [passportID, setPassportID] = useState("");
-  
   const navigate = useNavigate();
 
   const handleSearch = () => {
@@ -15,23 +13,20 @@ const HeroSection = () => {
       return;
     }
 
-    navigate(`/battery/${passportID}`);
-
-    // fetch(`http://localhost:5000/api/batteries/${passportID}`).then(reponse => response.json())
-
-    console.log(response)
+    // Here you could optionally validate the passportID format
+    navigate(`/battery/${passportID}`); 
   };
 
   const handleSampleIDClick = () => {
-    setPassportID("ABC");
+    setPassportID("ABC"); // Set a sample ID to test
   };
 
   const handleQrScan = () => {
-    alert("QR scan feature coming soon!");
+    alert("QR scan feature coming soon!"); // You can integrate a QR code scanner later
   };
 
   const handleRegisterClick = () => {
-    navigate("/RegisterBattery");
+    navigate("/RegisterBattery"); // Redirect to the registration page
   };
 
   return (
