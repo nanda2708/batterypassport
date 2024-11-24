@@ -1,0 +1,22 @@
+[
+  {
+    "batteryPassportID": "ABC",
+    "manufacturerIdentity": "1",
+    "manufacturerPlace": "1",
+    "manufactureDate": "2024-11-27",
+    "batteryCategory": "abc",
+    "batteryWeight": "1",
+    "batteryStatus": "Original",
+    "labelsAndCertifications": "abc",
+    "complianceTestResults": "abc",
+    "supplyChainReport": "abc",
+    "carbonFootprint": "ABC",
+    "cfPerformanceClass": "abc",
+    "batteryChemistry": "abc",
+    "circularityReport": "abc",
+    "safetyInstructions": "sabc",
+    "capacitySoH": "bac",
+    "expectedLifetime": "sba",
+    "negativeEvents": "abc"
+  }
+]             
